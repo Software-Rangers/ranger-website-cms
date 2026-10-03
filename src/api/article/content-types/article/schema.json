@@ -46,19 +46,34 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": ["images", "files", "videos"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "articles"
+      "inversedBy": "articles",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "articles"
+      "inversedBy": "articles",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "blocks": {
       "type": "dynamiczone",
