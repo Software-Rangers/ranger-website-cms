@@ -57,23 +57,13 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "articles",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "inversedBy": "articles"
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "articles",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "inversedBy": "articles"
     },
     "blocks": {
       "type": "dynamiczone",
