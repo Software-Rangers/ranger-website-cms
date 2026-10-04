@@ -42,6 +42,7 @@ module.exports = ({ strapi }) => {
     strapi.db.query(UID).findMany({
       where: { documentId, publishedAt: null, ...where },
       populate,
+      orderBy: { id: "asc" },
     });
 
   strapi.documents.use(async (context, next) => {

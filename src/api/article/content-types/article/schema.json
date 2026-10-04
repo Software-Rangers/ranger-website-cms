@@ -56,14 +56,12 @@
     "author": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "articles"
+      "target": "api::author.author"
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "articles"
+      "target": "api::category.category"
     },
     "blocks": {
       "type": "dynamiczone",
