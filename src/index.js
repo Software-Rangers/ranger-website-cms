@@ -1,5 +1,6 @@
 'use strict';
 const bootstrap = require("./bootstrap");
+const shareArticleRelations = require("./utils/share-article-relations");
 
 module.exports = {
   /**
@@ -8,7 +9,9 @@ module.exports = {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {},
+  register({ strapi }) {
+    shareArticleRelations({ strapi });
+  },
 
   /**
    * An asynchronous bootstrap function that runs before
